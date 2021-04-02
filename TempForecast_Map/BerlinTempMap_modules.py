@@ -1,4 +1,4 @@
-# Helper functions to prepare data
+# Helper functions to prepare data for Berlin temperature map
 import pandas as pd
 
 def read_in(datapath, districtname):
