@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Movie recommender</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+<body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <h1>Movie Recommender</h1>
+   
+    <div id="main_body">
+    <p>Please input three movies with your rating (like least 1 to 5 like best). 
+    <br>You'll get relevant movie recommendations after pushing the button.</p>
+    
+    <form action="/movie" method="GET">
+      <table>
+        <th>Movie</th>
+        <th>Rating</th>
+        <tr>
+          <td>
+            <input name="movie1" size="50">
+          </td>
+          <td>
+            <input name="rating1" size="5">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input name="movie2" size="50">
+          </td>
+          <td>
+            <input name="rating2" size="5">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input name="movie3" size="50">
+          </td>
+          <td>
+            <input name="rating3" size="5">
+          </td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit" value="Get recommendation">
+    </form>
+    </div>
+
+    <p><span>Photo by <a href="https://unsplash.com/@deko_lt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valdemaras D.</a> on <a href="https://unsplash.com/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+</body>
+</html>

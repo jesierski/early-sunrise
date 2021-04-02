@@ -1,0 +1,102 @@
+EUROPEAN CLIMATE ASSESSMENT & DATASET (ECA&D), file created on 17-12-2020
+THESE DATA CAN BE USED FREELY PROVIDED THAT THE FOLLOWING SOURCE IS ACKNOWLEDGED:
+
+Klein Tank, A.M.G. and Coauthors, 2002. Daily dataset of 20th-century surface
+air temperature and precipitation series for the European Climate Assessment.
+Int. J. of Climatol., 22, 1441-1453.
+Data and metadata available at http://www.ecad.eu
+
+FILE FORMAT (MISSING VALUE CODE IS -9999):
+
+ 01- 05 STAID  : Station identifier
+ 07- 12 SOUID  : Source identifier
+ 14- 53 SOUNAME: Source name
+ 55- 56 CN     : Country code (ISO3116 country codes)
+ 58- 66 LAT    : Latitude in degrees:minutes:seconds (+: North, -: South)
+ 68- 77 LON    : Longitude in degrees:minutes:seconds (+: East, -: West)
+ 79- 82 HGTH   : Station elevation in meters
+ 84- 87 ELEI   : Element identifier (see website at Daily Data > Data dictionary > Elements)
+ 89- 96 BEGIN  : Begin date YYYYMMDD
+ 98-105 END    : End date YYYYMMDD
+107-111 PARID  : Participant identifier
+113-163 PARNAME: Participant name
+
+STAID, SOUID,SOUNAME                                 ,CN,      LAT,       LON,HGHT,ELEI,   BEGIN,     END,PARID,PARNAME
+
+ 4005,111442,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, CC1,19480101,20081031,   11,National Climate Data Center (DWD)                
+ 4005,115741,BERLIN-DAHLEM                           ,DE,+52:27:50,+013:18:06,  51, CC1,19500101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,121147,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, CC1,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,127483,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, CC1,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4581,121147,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, CC1,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4581,128059,BERLIN-TEGELER FLIESSTAL                ,DE,+52:36:21,+013:17:49,  36, CC1,19780401,19941231,   11,National Climate Data Center (DWD)                
+ 4005,111443,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, HU3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,115744,BERLIN-DAHLEM                           ,DE,+52:27:50,+013:18:06,  51, HU3,19500101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,121155,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, HU3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,127491,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, HU3,19080401,19621231,   11,National Climate Data Center (DWD)                
+ 4005,127851,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, HU3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4563,111443,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, HU3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,121155,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, HU3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,127491,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, HU3,19080401,19621231,   11,National Climate Data Center (DWD)                
+ 4563,127851,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, HU3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4563,128127,BERLIN-TREPTOW                          ,DE,+52:27:24,+013:28:18,  35, HU3,19470101,19601231,   11,National Climate Data Center (DWD)                
+ 4581,121155,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, HU3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4581,127851,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, HU3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4581,128067,BERLIN-TEGELER FLIESSTAL                ,DE,+52:36:21,+013:17:49,  36, HU3,19780401,19941231,   11,National Climate Data Center (DWD)                
+ 4005,100134,BERLIN-DAHLEM                           ,DE,+52:27:50,+013:18:06,  51, TX3,19500101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,111450,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, TX3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,121154,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TX3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,127490,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, TX3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4005,127850,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TX3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4563,111450,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, TX3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,121154,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TX3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,127490,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, TX3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4563,127850,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TX3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4581,121154,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TX3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4581,127850,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TX3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4581,128066,BERLIN-TEGELER FLIESSTAL                ,DE,+52:36:21,+013:17:49,  36, TX3,19780401,19941231,   11,National Climate Data Center (DWD)                
+ 4005,100133,BERLIN-DAHLEM                           ,DE,+52:27:50,+013:18:06,  51, TG3,19500101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,111448,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, TG3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,121152,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TG3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,127488,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, TG3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4005,127848,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TG3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4563,111448,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, TG3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,121152,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TG3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,127488,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, TG3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4563,127848,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TG3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4581,121152,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TG3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4581,127848,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TG3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4581,128064,BERLIN-TEGELER FLIESSTAL                ,DE,+52:36:21,+013:17:49,  36, TG3,19780401,19941231,   11,National Climate Data Center (DWD)                
+ 4005,100132,BERLIN-DAHLEM                           ,DE,+52:27:50,+013:18:06,  51, TN3,19500101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,111449,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, TN3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,121153,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TN3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,127489,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, TN3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4005,127849,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TN3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4563,111449,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, TN3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,121153,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TN3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,127489,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, TN3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4563,127849,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TN3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4581,121153,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, TN3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4581,127849,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, TN3,19560101,19641231,   11,National Climate Data Center (DWD)                
+ 4581,128065,BERLIN-TEGELER FLIESSTAL                ,DE,+52:36:21,+013:17:49,  36, TN3,19780401,19941231,   11,National Climate Data Center (DWD)                
+ 4005,100135,BERLIN-DAHLEM                           ,DE,+52:27:50,+013:18:06,  51, RR3,19500101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,111445,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, RR3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,121150,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, RR3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,127486,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, RR3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4563,111445,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, RR3,19480101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,121150,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, RR3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,127486,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, RR3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4563,127846,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, RR3,19690101,19910817,   11,National Climate Data Center (DWD)                
+ 4581,121150,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, RR3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4581,128062,BERLIN-TEGELER FLIESSTAL                ,DE,+52:36:21,+013:17:49,  36, RR3,19780401,19941231,   11,National Climate Data Center (DWD)                
+ 4005,111446,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, SD3,19480101,20081101,   11,National Climate Data Center (DWD)                
+ 4005,115743,BERLIN-DAHLEM                           ,DE,+52:27:50,+013:18:06,  51, SD3,19500101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,121151,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, SD3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4005,127487,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, SD3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4005,127847,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, SD3,19690101,19910831,   11,National Climate Data Center (DWD)                
+ 4563,111446,BERLIN-TEMPELHOF                        ,DE,+52:28:07,+013:24:14,  48, SD3,19480101,20081101,   11,National Climate Data Center (DWD)                
+ 4563,121151,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, SD3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4563,127487,BERLIN-DAHLEM (LFAG)                    ,DE,+52:27:28,+013:18:05,  55, SD3,18760101,19621231,   11,National Climate Data Center (DWD)                
+ 4563,127847,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, SD3,19690101,19910831,   11,National Climate Data Center (DWD)                
+ 4581,121151,BERLIN-TEGEL                            ,DE,+52:33:56,+013:18:39,  36, SD3,19630101,20201031,   11,National Climate Data Center (DWD)                
+ 4581,127847,BERLIN-MITTE                            ,DE,+52:32:00,+013:23:00,  35, SD3,19690101,19910831,   11,National Climate Data Center (DWD)                
+ 4581,128063,BERLIN-TEGELER FLIESSTAL                ,DE,+52:36:21,+013:17:49,  36, SD3,19780401,19941231,   11,National Climate Data Center (DWD)                

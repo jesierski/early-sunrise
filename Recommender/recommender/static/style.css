@@ -1,0 +1,50 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    margin-left: 30px;
+    color:rgb(238, 162, 104)
+}
+
+p1 {
+    margin-left: 30px;
+}
+
+h1 {
+    padding-top: 50px;
+    margin-left: 30px;
+    color:rgb(238, 162, 104)
+}
+
+h2 {
+    margin-left: 30px;
+    color: rgb(238, 162, 104)
+}
+
+h3 {
+    margin-left: 30px;
+    color: rgb(238, 162, 104)
+}
+
+#main_body {
+    background-image: url("/static/valdemaras-d-_MHsOnBYLO0-unsplash.jpg");
+}
+
+form {
+    margin-left: 30px;
+    color: rgb(238, 162, 104) 
+}
+
+div {
+    padding: 50px;
+    margin: 30px;
+  }
+
+table {
+    color: rgb(238, 162, 104)
+}
+
+th, td {
+    padding: 10px;
+}

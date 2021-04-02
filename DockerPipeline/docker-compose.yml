@@ -1,0 +1,61 @@
+# defines setup of the docker-compose pipeline
+# pipeline gets tweets, analyses sentiment, and posts to Slack channel
+
+version: '3' # version of docker-compose
+services: # list all containers that are part of the pipeline
+
+# 1st container: get tweets
+  tweet_collector:
+    container_name: tweet_collector # actual docker container
+    build: tweet_collector/ # creates image from Dockerfile in ./tweet_collector
+    volumes: # links local ./tweet_collector/ with container dir /app and synchronizes
+    - ./tweet_collector/:/app
+    depends_on: # tweet_collector container will be started after mongodb container has started
+    - mongodb
+    #environment:
+    #- TWITTER_CONSUMER_API_KEY=${TWITTER_CONSUMER_API_KEY}
+    #- TWITTER_CONSUMER_API_SECRET=${TWITTER_CONSUMER_API_SECRET}
+    #- TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN}
+    #- TWITTER_ACCESS_TOKEN_SECRET=${TWITTER_ACCESS_TOKEN_SECRET}
+
+# 2nd container: mongo db
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    ports:
+    - 27017:27017
+
+# 3rd container: ETL job
+  etl_job:
+    container_name: etl # actual docker container
+    build: etl_job/ # creates image from Dockerfile in ./etl_job
+    volumes: # links local ./etl_job/ with container dir /app and synchronizes
+    - ./etl_job/:/app
+    depends_on: # etl_job container will be started after mongodb+postgresdb container has started
+    - mongodb
+    - mytwitterpg
+
+# 4th container: postgres
+  mytwitterpg:
+    container_name: postgresdb
+    image: postgres
+    ports:
+    - 5555:5432
+    environment:
+    - POSTGRES_USER=anja
+    - POSTGRES_PASSWORD=anjapgpw
+    - POSTGRES_DB=anjapostgres_db
+
+# 5th container: slack bot
+  tweetbot:
+    container_name: tweetbot
+    build: tweetbot/ # creates image from Dockerfile in ./tweetbot
+    volumes: # links local ./tweetbot/ with container dir /app and synchronizes
+    - ./tweetbot/:/app
+    depends_on: # slackbot container will be started after these containers have started
+    - mongodb
+    - mytwitterpg
+    - etl_job
+    - tweet_collector
+
+
