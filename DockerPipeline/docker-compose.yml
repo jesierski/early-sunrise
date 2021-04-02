@@ -1,5 +1,5 @@
 # defines setup of the docker-compose pipeline
-# pipeline gets tweets, analyses sentiment, and posts to Slack channel
+# pipeline gets tweets, analyses sentiment, and posts tweets to Slack channel
 
 version: '3' # version of docker-compose
 services: # list all containers that are part of the pipeline
