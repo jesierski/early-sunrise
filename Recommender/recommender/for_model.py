@@ -12,18 +12,8 @@ FILENAME = 'data/recommender_model_n-comp-20_max-iter-10000_KNN-imputer.sav'
 
 
 def get_scores(nameinput1, nameinput2, nameinput3, ratinginput1, ratinginput2, ratinginput3):
-    # df_rating = get_ratings()
-    # df_movies = get_movies()
-
-    # create dataframe with movies, ratings by users
-    # R = make_df(df_rating, df_movies)
     #Use fixed matrix R_imputed pickled beforehand to speedup recommender
     R = pd.read_pickle('data/R_imputed.pkl')
-
-    ##make R.column labels movie titles
-    #R_movieIds = pd.DataFrame(R.columns)
-    #titles = R_movieIds.merge(df_movies, on='movieId')
-    #R.columns = titles['title only']
 
     #Model preparations, define Q
     loaded_model = pickle.load(open(FILENAME, 'rb'))
